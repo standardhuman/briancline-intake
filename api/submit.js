@@ -39,7 +39,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: 'Intake Form <intake@sailorskills.com>',
-        to: ['brian@sailorskills.com'],
+        to: ['standardhuman@gmail.com'],
         subject: `New Project Inquiry: ${data.company || 'Unknown Company'}`,
         html: emailBody,
         reply_to: data.email,
