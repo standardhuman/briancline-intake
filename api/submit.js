@@ -38,8 +38,8 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Intake Form <intake@briancline.co>',
-        to: ['projects@briancline.co'],
+        from: 'Intake Form <intake@sailorskills.com>',
+        to: ['brian@sailorskills.com'],
         subject: `New Project Inquiry: ${data.company || 'Unknown Company'}`,
         html: emailBody,
         reply_to: data.email,
@@ -170,7 +170,7 @@ function formatEmailBody(data) {
 
   html += `
       <hr style="border: none; border-top: 1px solid #e5e7eb; margin-top: 32px;">
-      <p style="color: #9ca3af; font-size: 12px;">Submitted via intake.briancline.co</p>
+      <p style="color: #9ca3af; font-size: 12px;">Submitted via intake.sailorskills.com</p>
     </div>
   `;
 
