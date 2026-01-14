@@ -77,11 +77,17 @@ function formatEmailBody(data) {
       fields: [
         ['Business Description', data['business-description']],
         ['Current Website', data['current-website']],
+        ['What\'s Working', data['site-working']],
+        ['What\'s NOT Working', data['site-frustrations']],
+        ['Ideal Customer', data['ideal-customer']],
+        ['Market Positioning', data.positioning],
       ],
     },
     {
       title: 'Project Details',
       fields: [
+        ['How Customers Find Them', data['lead-source']],
+        ['Primary Conversion Goal', data['conversion-goal']],
         ['Project Type', data['project-type']],
         ['Pages Needed', data['pages-needed']],
         ['Features', data.features],
@@ -99,6 +105,7 @@ function formatEmailBody(data) {
       title: 'Design & Timeline',
       fields: [
         ['Inspiration Sites', data.inspiration],
+        ['Why They Like Them', data['inspiration-why']],
         ['Timeline', data.timeline],
         ['Budget', data.budget],
       ],
