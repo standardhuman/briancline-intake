@@ -180,11 +180,85 @@
             <input type="url" name="current-website" id="current-website" placeholder="https://"
                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-shadow">
           </div>
+
+          <div>
+            <label for="site-working" class="block text-sm font-medium text-gray-700 mb-1">What's working well with your current site or online presence?</label>
+            <p class="text-xs text-gray-500 mb-2">If you don't have a site yet, what's working in how you currently attract customers?</p>
+            <textarea name="site-working" id="site-working" rows="2"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-shadow resize-none"></textarea>
+          </div>
+
+          <div>
+            <label for="site-frustrations" class="block text-sm font-medium text-gray-700 mb-1">What's NOT working or frustrating you?</label>
+            <textarea name="site-frustrations" id="site-frustrations" rows="2"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-shadow resize-none"></textarea>
+          </div>
+
+          <div>
+            <label for="ideal-customer" class="block text-sm font-medium text-gray-700 mb-1">Who is your ideal customer?</label>
+            <p class="text-xs text-gray-500 mb-2">Describe them briefly - who are they, what do they need, what problem are you solving for them?</p>
+            <textarea name="ideal-customer" id="ideal-customer" rows="2"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-shadow resize-none"></textarea>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">How would you describe your market positioning?</label>
+            <div class="space-y-2">
+              <label class="flex items-center">
+                <input type="radio" name="positioning" value="premium" class="mr-2 text-gray-900 focus:ring-gray-900">
+                <span class="text-sm text-gray-700">Premium / High-end</span>
+              </label>
+              <label class="flex items-center">
+                <input type="radio" name="positioning" value="mid-market" class="mr-2 text-gray-900 focus:ring-gray-900">
+                <span class="text-sm text-gray-700">Mid-market / Competitive</span>
+              </label>
+              <label class="flex items-center">
+                <input type="radio" name="positioning" value="budget" class="mr-2 text-gray-900 focus:ring-gray-900">
+                <span class="text-sm text-gray-700">Budget-friendly / Value-focused</span>
+              </label>
+              <label class="flex items-center">
+                <input type="radio" name="positioning" value="niche" class="mr-2 text-gray-900 focus:ring-gray-900">
+                <span class="text-sm text-gray-700">Niche specialist</span>
+              </label>
+            </div>
+          </div>
         </div>
 
         <!-- Project Details -->
         <div class="space-y-4">
           <h3 class="text-lg font-semibold text-gray-900 border-b border-gray-200 pb-2">Project Details</h3>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label for="lead-source" class="block text-sm font-medium text-gray-700 mb-1">How do customers typically find you?</label>
+              <select name="lead-source" id="lead-source"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-shadow bg-white">
+                <option value="">Select...</option>
+                <option value="referrals">Word of mouth / Referrals</option>
+                <option value="search">Google / Search engines</option>
+                <option value="social">Social media</option>
+                <option value="ads">Paid advertising</option>
+                <option value="directories">Directories / Listings</option>
+                <option value="events">Events / Networking</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="conversion-goal" class="block text-sm font-medium text-gray-700 mb-1">What should visitors do on your site?</label>
+              <select name="conversion-goal" id="conversion-goal"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-shadow bg-white">
+                <option value="">Select primary goal...</option>
+                <option value="call">Call you</option>
+                <option value="form">Fill out a contact form</option>
+                <option value="book">Book an appointment</option>
+                <option value="quote">Request a quote</option>
+                <option value="buy">Make a purchase</option>
+                <option value="learn">Learn about your services</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
 
           <div>
             <label for="project-type" class="block text-sm font-medium text-gray-700 mb-1">What type of site do you need? *</label>
@@ -285,6 +359,13 @@
             <label for="inspiration" class="block text-sm font-medium text-gray-700 mb-1">Any websites you like the look of?</label>
             <p class="text-xs text-gray-500 mb-2">Share links to sites that inspire you - helps me understand your aesthetic.</p>
             <textarea name="inspiration" id="inspiration" rows="2"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-shadow resize-none"></textarea>
+          </div>
+
+          <div>
+            <label for="inspiration-why" class="block text-sm font-medium text-gray-700 mb-1">What do you like about them?</label>
+            <p class="text-xs text-gray-500 mb-2">Is it the colors? Layout? Photography style? The vibe? Helps me understand what to aim for.</p>
+            <textarea name="inspiration-why" id="inspiration-why" rows="2"
                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-shadow resize-none"></textarea>
           </div>
 
