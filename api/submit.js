@@ -177,7 +177,21 @@ function formatEmailBody(data) {
 
   html += `
       <hr style="border: none; border-top: 1px solid #e5e7eb; margin-top: 32px;">
-      <p style="color: #9ca3af; font-size: 12px;">Submitted via intake.sailorskills.com</p>
+      <p style="color: #9ca3af; font-size: 12px;">Submitted via intake.briancline.co</p>
+    </div>
+  `;
+
+  // Add Howard's setup instructions
+  html += `
+    <div style="font-family: monospace; background: #f3f4f6; padding: 20px; margin-top: 32px; border-radius: 8px; font-size: 12px; color: #374151;">
+      <p style="font-weight: bold; margin-bottom: 12px;">🤖 HOWARD: Project Setup Instructions</p>
+      <p style="margin-bottom: 8px;"><strong>1. Create project:</strong> ~/AI/business/clients/${escapeHtml(data.company?.toLowerCase().replace(/[^a-z0-9]/g, '-') || 'new-client')}/</p>
+      <p style="margin-bottom: 8px;"><strong>2. Domain:</strong> ${escapeHtml(data.company?.toLowerCase().replace(/[^a-z0-9]/g, '-') || 'client')}.briancline.co</p>
+      <p style="margin-bottom: 8px;"><strong>3. Required files:</strong> index.html, feedback.html, api/submit-feedback.js, vercel.json, images/</p>
+      <p style="margin-bottom: 8px;"><strong>4. Feedback page:</strong> Progress bar (V1→V2→V3→Final), version cards, feedback form</p>
+      <p style="margin-bottom: 8px;"><strong>5. Timeline:</strong> V1 within 48h | 24h feedback | V2 by 9am | 24h feedback | V3 by 9am | Launch after approval</p>
+      <p style="margin-bottom: 8px;"><strong>6. Version control:</strong> Archive each version before publishing next (v1.html, v2.html)</p>
+      <p style="margin-bottom: 0;"><strong>Full workflow:</strong> ~/AI/business/clients/WEBSITE-WORKFLOW.md</p>
     </div>
   `;
 
